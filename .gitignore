@@ -1,0 +1,25 @@
+# CORDOVA
+# =======
+/dist/*
+!/dist/.gitkeep
+
+# NPM
+# ===
+node_modules
+
+# APP
+# ===
+/src/app/config.js
+/src/app/assets/bower_components
+/src/app/assets/build
+*.min.js
+*.min.js.map
+
+# OS
+# ==
+.DS_Store
+
+# IDEs etc
+# ========
+config.codekit
+.idea

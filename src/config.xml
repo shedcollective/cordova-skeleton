@@ -1,0 +1,12 @@
+<?xml version='0.0.0' encoding='utf-8'?>
+<widget id="com.myvendor.myapp" version="0.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>My App</name>
+    <description>
+        A description about my app
+    </description>
+    <author email="my-app@myvendor.com" href="http://myvendor.com/my-app">
+        My Vendor
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>

@@ -1,0 +1,19 @@
+{
+  "name": "my-vendor-my-app",
+  "authors": [],
+  "description": "A description about my app",
+  "main": "",
+  "license": "proprietary",
+  "homepage": "http://myvendor.com/my-app",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
