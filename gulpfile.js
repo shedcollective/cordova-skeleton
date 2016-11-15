@@ -47,12 +47,12 @@
 var css = {
     'app': {
         'input': [
-            'assets/sass/app.scss'
+            'src/app/assets/sass/app.scss'
         ],
         'output': 'app.css',
         'watch': [
-            'assets/sass/app.scss',
-            'assets/sass/app/**/*.scss'
+            'src/app/assets/sass/app.scss',
+            'src/app/assets/sass/app/**/*.scss'
         ]
     }
 };
@@ -60,14 +60,14 @@ var css = {
 var js = {
     'app': {
         'input': [
-            'assets/bower_components/jquery/dist/jquery.js',
-            'assets/js/app/*.js',
-            'assets/js/app.js'
+            'src/app/assets/bower_components/jquery/dist/jquery.js',
+            'src/app/assets/js/app/*.js',
+            'src/app/assets/js/app.js'
         ],
         'output': 'app.js',
         'watch': [
-            'assets/js/app.js',
-            'assets/js/app/**/*.js'
+            'src/app/assets/js/app.js',
+            'src/app/assets/js/app/**/*.js'
         ]
     }
 };
@@ -140,7 +140,7 @@ function compileCss(task, input, output) {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest('./assets/build/css/'))
+        .pipe(gulp.dest('./src/app/assets/build/css/'))
         .on('error', notify.onError({
             message: '[' + task + '] Error compiling CSS',
             title:   '<%= error.message %>',
@@ -175,7 +175,7 @@ function compileJs(task, input, output) {
             suffix: '.min'
         }))
         .pipe(sourceMap.write('./', {includeContent: false}))
-        .pipe(gulp.dest('./assets/build/js/'))
+        .pipe(gulp.dest('./src/app/assets/build/js/'))
         .on('error', notify.onError({
             message: '[' + task + '] Error compiling JS',
             title:   '<%= error.message %>',
