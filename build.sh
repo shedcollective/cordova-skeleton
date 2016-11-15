@@ -54,6 +54,13 @@ else
     rm -f ./dist/www/config.js
     rm -f ./dist/www/cordova.js
 
+    # Remove the source JS, CSS etc This should be all compiled into the build folder,
+    # removing these files will reduce the footprint. If your needs differ then amend
+    # these lines accordingly
+    rm -rf ./dist/www/assets/bower_components/
+    rm -rf ./dist/www/assets/js/
+    rm -rf ./dist/www/assets/sass/
+
     # Set some configs
     CONFIG_VERSION="$3"
 
