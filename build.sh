@@ -52,6 +52,7 @@ else
     # Cleanup
     echo "Cleaning up www directory..."
     rm -f ./dist/www/config.js
+    rm -f ./dist/www/cordova.js
 
     # Set some configs
     CONFIG_VERSION="$3"
