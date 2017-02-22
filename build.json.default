@@ -1,0 +1,25 @@
+{
+    "ios": {
+        "debug": {
+            "codeSignIdentity": "<REPLACE WITH CERTIFICATE NAME>",
+            "provisioningProfile": "<REPLACE WITH PROVISIONING PROFILE>",
+            "developmentTeam": "<REPLACE WITH DEVELOPMENT TEAM ID>",
+            "packageType": "development"
+        },
+        "release": {
+            "codeSignIdentity": "<REPLACE WITH CERTIFICATE NAME>",
+            "provisioningProfile": "<REPLACE WITH PROVISIONING PROFILE>",
+            "developmentTeam": "<REPLACE WITH DEVELOPMENT TEAM ID>",
+            "packageType": "app-store"
+        }
+    },
+     "android": {
+         "release": {
+             "keystore": "keys/<REPLACE WITH KEY PATH>",
+             "storePassword": "<REPLACE WITH KEYSTORE PASSWORD>",
+             "alias": "<REPLACE WITH KEYSTORE ALIAS>",
+             "password" : "<REPLACE WITH KEY PASSWORD>",
+             "keystoreType": ""
+         }
+     }
+ }

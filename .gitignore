@@ -3,6 +3,9 @@
 /dist/*
 !/dist/.gitkeep
 
+# Prevent further updates to build.json (i.e. passwords)
+/build.json
+
 # NPM
 # ===
 node_modules
