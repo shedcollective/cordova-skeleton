@@ -1,0 +1,68 @@
+<?xml version="0.0.0" encoding="utf-8"?>
+<widget id="com.myvendor.myapp" version="0.0.0" android-versionCode="0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>My App</name>
+    <description>
+        A description about my app
+    </description>
+    <author email="my-app@myvendor.com" href="http://myvendor.com/my-app">
+        My Vendor
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <plugin name="cordova-plugin-console" spec="~1.0.5" />
+    <plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
+    <!-- Required in order to allow Ajax requests on Android -->
+    <plugin name="cordova-plugin-whitelist" spec="~1.3.1" />
+    <allow-navigation href="http://domain.dev/*" />
+    <allow-navigation href="http://staging.domain.com/*" />
+    <allow-navigation href="https://www.domain.com" />
+    <platform name="ios">
+        <!-- Icon -->
+        <icon src="icons-splash/ios/icons/icon.png" width="57" height="57" /><!-- 57x57 -->
+        <icon src="icons-splash/ios/icons/icon@2x.png" width="114" height="114" /><!-- 114x114 -->
+        <icon src="icons-splash/ios/icons/icon-small.png" width="29" height="29" /><!-- 29x29 -->
+        <icon src="icons-splash/ios/icons/icon-small@2x.png" width="58" height="58" /><!-- 58x58 -->
+        <icon src="icons-splash/ios/icons/icon-40.png" width="40" height="40" /><!-- 40x40 -->
+        <icon src="icons-splash/ios/icons/icon-40@2x.png" width="80" height="80" /><!-- 80x80 -->
+        <icon src="icons-splash/ios/icons/icon-50.png" width="50" height="50" /><!-- 50x50 -->
+        <icon src="icons-splash/ios/icons/icon-50@2x.png" width="100" height="100" /><!-- 100x100 -->
+        <icon src="icons-splash/ios/icons/icon-60.png" width="60" height="60" /><!-- 60x60 -->
+        <icon src="icons-splash/ios/icons/icon-60@2x.png" width="120" height="120" /><!-- 120x120 -->
+        <icon src="icons-splash/ios/icons/icon-60@3x.png" width="180" height="180" /><!-- 180x180 -->
+        <icon src="icons-splash/ios/icons/icon-72.png" width="72" height="72" /><!-- 72x72 -->
+        <icon src="icons-splash/ios/icons/icon-72@2x.png" width="144" height="144" /><!-- 144x144 -->
+        <icon src="icons-splash/ios/icons/icon-76.png" width="76" height="76" /><!-- 76x76 -->
+        <icon src="icons-splash/ios/icons/icon-76@2x.png" width="152" height="152" /><!-- 152x152 -->
+        <icon src="icons-splash/ios/icons/icon-83.5@2x.png" width="167" height="167" /><!-- 167x167 -->
+        <!-- Splash Screen -->
+        <splash src="icons-splash/ios/splash/Default@2x~universal~anyany.png" /><!-- 2733x2732 -->
+        <splash src="icons-splash/ios/splash/Default@2x~universal~comany.png" /><!-- 1278x2732 -->
+        <splash src="icons-splash/ios/splash/Default@2x~universal~comcom.png" /><!-- 1334x750 -->
+        <splash src="icons-splash/ios/splash/Default@3x~universal~anyany.png" /><!-- 2208x2208 -->
+        <splash src="icons-splash/ios/splash/Default@3x~universal~anycom.png" /><!-- 2208x1242 -->
+        <splash src="icons-splash/ios/splash/Default@3x~universal~comany.png" /><!-- 1242x2208 -->
+    </platform>
+    <platform name="android">
+        <icon src="icons-splash/android/icon/ldpi.png" density="ldpi" /><!-- 36x36 -->
+        <icon src="icons-splash/android/icon/mdpi.png" density="mdpi" /><!-- 48x48 -->
+        <icon src="icons-splash/android/icon/hdpi.png" density="hdpi" /><!-- 72x72 -->
+        <icon src="icons-splash/android/icon/xhdpi.png" density="xhdpi" /><!-- 96x96 -->
+        <icon src="icons-splash/android/icon/xxhdpi.png" density="xxhdpi" /><!-- 144x144 -->
+        <icon src="icons-splash/android/icon/xxxhdpi.png" density="xxxhdpi" /><!-- 192x192 -->
+        <!-- Splash Screen -->
+        <splash src="icons-splash/android/splash/land-ldpi.png" density="land-ldpi" /><!-- 320x200 -->
+        <splash src="icons-splash/android/splash/land-mdpi.png" density="land-mdpi" /><!-- 480x320 -->
+        <splash src="icons-splash/android/splash/land-hdpi.png" density="land-hdpi" /><!-- 800x480 -->
+        <splash src="icons-splash/android/splash/land-xhdpi.png" density="land-xhdpi" /><!-- 1280x720 -->
+        <splash src="icons-splash/android/splash/land-xxhdpi.png" density="land-xxhdpi" /><!-- 1600x960 -->
+        <splash src="icons-splash/android/splash/land-xxxhdpi.png" density="land-xxxhdpi" /><!-- 1920x1280 -->
+        <splash src="icons-splash/android/splash/port-ldpi.png" density="port-ldpi" /><!-- 200x320 -->
+        <splash src="icons-splash/android/splash/port-mdpi.png" density="port-mdpi" /><!-- 320x480 -->
+        <splash src="icons-splash/android/splash/port-hdpi.png" density="port-hdpi" /><!-- 480x800 -->
+        <splash src="icons-splash/android/splash/port-xhdpi.png" density="port-xhdpi" /><!-- 720x1280 -->
+        <splash src="icons-splash/android/splash/port-xxhdpi.png" density="port-xxhdpi" /><!-- 960x1600 -->
+        <splash src="icons-splash/android/splash/port-xxxhdpi.png" density="port-xxxhdpi" /><!-- 12801920 -->
+    </platform>
+    <preference name="ShowSplashScreenSpinner" value="false"/>
+    <preference name="SplashMaintainAspectRatio" value="true" />
+</widget>
